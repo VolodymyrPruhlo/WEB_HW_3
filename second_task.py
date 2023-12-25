@@ -8,7 +8,7 @@ def worker(num):
     
     
 def factorize(numbers):
-    with Pool(processes=2) as pool:
+    with Pool(processes=1) as pool:
         return pool.map(worker, numbers)
     
 
